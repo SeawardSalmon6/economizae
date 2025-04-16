@@ -1,0 +1,73 @@
+.marketCard {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 240px;
+}
+
+.marketImage {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 100px;
+  margin: auto 0;
+}
+
+.marketInfo {
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  min-width: 240px;
+  margin: auto 0;
+}
+
+.marketName {
+  color: #1a281b;
+  letter-spacing: 0.54px;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.ratingContainer {
+  color: #444;
+  letter-spacing: 0.48px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.ratingIcon {
+  aspect-ratio: 1.07;
+  object-fit: contain;
+  object-position: center;
+  width: 15px;
+  margin: auto 0;
+}
+
+.rating {
+  color: rgb(232, 135, 18);
+}
+
+.priceContainer {
+  letter-spacing: 0.42px;
+  background-color: #6cf9ac;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  padding: 3px 10px;
+  font-size: 14px;
+}
+
+.priceIcon {
+  aspect-ratio: 0.86;
+  object-fit: contain;
+  object-position: center;
+  width: 12px;
+  margin: auto 0;
+}

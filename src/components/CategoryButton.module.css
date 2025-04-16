@@ -1,0 +1,25 @@
+.categoryButton {
+  background-color: #6cf9ac;
+  border: 1px solid #05833e;
+  border-radius: 12px;
+  color: #0a490f;
+  padding: 16px;
+  font-family:
+    Funnel Display,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.48px;
+  width: 180px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+@media (width <= 991px) {
+  .categoryButton {
+    white-space: initial;
+  }
+}

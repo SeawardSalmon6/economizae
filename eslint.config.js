@@ -9,13 +9,16 @@ export default tseslint.config(
   {
     files: ["**/*.{js,mjs,cjs,ts,jsx,tsx}"],
     plugins: { js },
-    extends: ["js/recommended"],
+    extends: [js.configs.recommended],
   },
   {
     files: ["**/*.{js,mjs,cjs,ts,jsx,tsx}"],
     languageOptions: { globals: globals.browser },
   },
   {
+    name: "tseslint-config",
+    files: ["**/*.{ts,tsx}"],
+    plugins: { tseslint },
     extends: [
       // Remove ...tseslint.configs.recommended and replace with this
       tseslint.configs.recommendedTypeChecked,
@@ -33,6 +36,15 @@ export default tseslint.config(
     },
   },
   pluginReact.configs.flat.recommended,
+  pluginReact.configs.flat["jsx-runtime"],
+  {
+    name: "react-config",
+    settings: {
+      react: {
+        version: "detect",
+      },
+    },
+  },
   {
     plugins: {
       // Add the react-x and react-dom plugins

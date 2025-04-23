@@ -1,7 +1,5 @@
-"use client";
-import React from "react";
 import styles from "./Hero.module.css";
-import { CategoryButton } from "./CategoryButton";
+import { CategoryButton } from "../../pages/Home/components/CategoryButton";
 
 export function Hero() {
   return (

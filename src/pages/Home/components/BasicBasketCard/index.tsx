@@ -1,22 +1,19 @@
-"use client";
-import React from "react";
 import styles from "./BasicBasketCard.module.css";
+import { BasicBasketCardProps } from "./types";
 
-type BasicBasketCardProps = {
-  image: string;
-  marketLogo: string;
-  marketName: string;
-  rating: string;
-  distance: string;
-  price: string;
-};
-
-export function BasicBasketCard(props: BasicBasketCardProps) {
+export function BasicBasketCard({
+  distance,
+  image,
+  marketLogo,
+  marketName,
+  price,
+  rating,
+}: BasicBasketCardProps) {
   return (
     <article className={styles.basketCard}>
       <div className={styles.imageContainer}>
         <img
-          src={props.image}
+          src={image}
           alt="Basic basket items"
           className={styles.basketImage}
         />
@@ -24,11 +21,11 @@ export function BasicBasketCard(props: BasicBasketCardProps) {
       <div className={styles.cardContent}>
         <div className={styles.marketHeader}>
           <img
-            src={props.marketLogo}
-            alt={props.marketName}
+            src={marketLogo}
+            alt={marketName}
             className={styles.marketLogo}
           />
-          <h3 className={styles.marketName}>{props.marketName}</h3>
+          <h3 className={styles.marketName}>{marketName}</h3>
         </div>
         <div className={styles.ratingContainer}>
           <img
@@ -37,8 +34,7 @@ export function BasicBasketCard(props: BasicBasketCardProps) {
             className={styles.ratingIcon}
           />
           <p className={styles.ratingText}>
-            <span className={styles.rating}>{props.rating}</span> •{" "}
-            {props.distance}
+            <span className={styles.rating}>{rating}</span> • {distance}
           </p>
         </div>
         <div className={styles.priceContainer}>
@@ -47,7 +43,7 @@ export function BasicBasketCard(props: BasicBasketCardProps) {
             alt="Price"
             className={styles.priceIcon}
           />
-          <p className={styles.priceText}>{props.price}</p>
+          <p className={styles.priceText}>{price}</p>
         </div>
       </div>
     </article>

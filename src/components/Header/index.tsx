@@ -1,5 +1,3 @@
-"use client";
-import React from "react";
 import styles from "./Header.module.css";
 
 export function Header() {
@@ -31,7 +29,7 @@ export function Header() {
             alt="Location"
           />
         </div>
-        <button className={styles.loginButton}>
+        <button type="button"  className={styles.loginButton}>
           <img
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/1045163c5c8c41229625baa324bb5ee7fbc788da?placeholderIfAbsent=true&apiKey=d83e7b782cab4cabaa5ad67426cc8d88"
             alt="Login"

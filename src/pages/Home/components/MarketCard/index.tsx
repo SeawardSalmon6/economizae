@@ -1,21 +1,18 @@
-"use client";
-import React from "react";
 import styles from "./MarketCard.module.css";
+import { MarketCardProps } from "./types";
 
-type MarketCardProps = {
-  name: string;
-  image: string;
-  rating: string;
-  distance: string;
-  price: string;
-};
-
-export function MarketCard(props: MarketCardProps) {
+export function MarketCard({
+  distance,
+  image,
+  name,
+  price,
+  rating,
+}: MarketCardProps) {
   return (
     <article className={styles.marketCard}>
-      <img src={props.image} alt={props.name} className={styles.marketImage} />
+      <img src={image} alt={name} className={styles.marketImage} />
       <div className={styles.marketInfo}>
-        <h3 className={styles.marketName}>{props.name}</h3>
+        <h3 className={styles.marketName}>{name}</h3>
         <div className={styles.ratingContainer}>
           <img
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/46c34139e63730a7502b35e25632bbe86604fde8?placeholderIfAbsent=true&apiKey=d83e7b782cab4cabaa5ad67426cc8d88"
@@ -23,8 +20,7 @@ export function MarketCard(props: MarketCardProps) {
             className={styles.ratingIcon}
           />
           <p className={styles.ratingText}>
-            <span className={styles.rating}>{props.rating}</span> •{" "}
-            {props.distance}
+            <span className={styles.rating}>{rating}</span> • {distance}
           </p>
         </div>
         <div className={styles.priceContainer}>
@@ -33,7 +29,7 @@ export function MarketCard(props: MarketCardProps) {
             alt="Price"
             className={styles.priceIcon}
           />
-          <p className={styles.priceText}>{props.price}</p>
+          <p className={styles.priceText}>{price}</p>
         </div>
       </div>
     </article>

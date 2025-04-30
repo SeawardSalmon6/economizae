@@ -1,5 +1,6 @@
 import styles from "./Footer.module.css";
 import WHITE_LOGO from "../../assets/img/logo-white.svg";
+import { Link } from "react-router";
 import clsx from "clsx";
 import { FooterProps } from "./types";
 
@@ -9,16 +10,16 @@ export function Footer({ ...props }: FooterProps) {
       <div className={styles.linksSection}>
         <img src={WHITE_LOGO} alt="Logo" className={styles.logo} />
         <div className={styles.linksList}>
-          <a className={styles.link} href="#">
+          <Link className={styles.link} to="/sobre">
             sobre nós
-          </a>
-          <a className={styles.link} href="#">
+          </Link>
+          <Link className={styles.link} to="/contato">
             contato
-          </a>
+          </Link>
         </div>
-        <a className={styles.link} href="#">
+        <Link className={styles.link} to="/">
           políticas de privacidade
-        </a>
+        </Link>
       </div>
       <div>
         <p className={styles.text}>

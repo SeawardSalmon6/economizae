@@ -15,15 +15,15 @@ export function Header({ ...props }: HeaderProps) {
           <img src={LOGO} alt="Logo" className={styles.logo} />
         </Link>
         <div className={styles.navLinks}>
-          <a href="#" className={styles.link}>
+          <Link to="/" className={styles.link}>
             início
-          </a>
-          <a href="#" className={styles.link}>
+          </Link>
+          <Link to="/sobre" className={styles.link}>
             sobre
-          </a>
-          <a href="#" className={styles.link}>
+          </Link>
+          <Link to="/contato" className={styles.link}>
             contato
-          </a>
+          </Link>
         </div>
       </nav>
       <div className={styles.userSection}>

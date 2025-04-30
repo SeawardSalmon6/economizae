@@ -6,13 +6,14 @@ import {
 import { Home } from "../pages/Home";
 import { Login } from "../pages/Login";
 import { About } from "../pages/About";
+import { Contact } from "../pages/Contact";
 
 export const routes = createRoutesFromElements(
   <Route path="/">
     <Route index element={<Home />} />
     <Route path="login" element={<Login />} />
     <Route path="sobre" element={<About />} />
-    {/* <Route path="*" element={<NotFound />} /> */}
+    <Route path="contato" element={<Contact />} />
   </Route>
 );
 

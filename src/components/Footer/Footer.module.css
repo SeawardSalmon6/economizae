@@ -1,0 +1,48 @@
+.footer {
+  background-color: #1a281b;
+  padding: 40px 20px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.footerContent {
+  max-width: 1700px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.footerText {
+  font-family: Funnel Display, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.contactInfo {
+  margin-bottom: 20px;
+}
+
+.contactItem {
+  font-family: Funnel Display, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 5px 0;
+}
+
+.socialLinks {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.socialLink {
+  color: #6cf9ac;
+  text-decoration: none;
+  font-family: Funnel Display, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.socialLink:hover {
+  text-decoration: underline;
+}

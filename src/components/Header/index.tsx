@@ -16,7 +16,7 @@ export function Header() {
           <a href="#" className={styles.navLink}>
             sobre
           </a>
-          <a href="#" className={styles.navLink}>
+          <a href="Contact" className={styles.navLink}>
             contato
           </a>
         </div>

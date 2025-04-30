@@ -3,6 +3,7 @@ import { Hero } from "../../components/Hero";
 import { BasicBasketCard } from "./components/BasicBasketCard";
 import { MarketCard } from "./components/MarketCard";
 import { BASIC_BASKET_ITEMS, FEATURED_MARKETS } from "./constants";
+import { Footer } from "../../components/Footer";
 import styles from "./Home.module.css";
 
 export function Home() {
@@ -52,6 +53,7 @@ export function Home() {
           ))}
         </div>
       </section>
+      <Footer />
     </main>
   );
 }

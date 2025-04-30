@@ -2,8 +2,10 @@ import { Link } from "react-router";
 import { Button } from "~components/Button";
 import { Input } from "~components/Input";
 import { LoginBase } from "~pages/Login/components/LoginBase";
+import formStyles from "~components/Form/Form.module.css";
 import loginBaseStyles from "~pages/Login/components/LoginBase/LoginBase.module.css";
 import styles from "~pages/Login/Register/Register.module.css";
+import { Form } from "~components/Form";
 
 export function Register() {
   return (
@@ -14,8 +16,8 @@ export function Register() {
           compare preços, faça listas de compra e prepare-se para economizar
         </p>
       </div>
-      <form className={loginBaseStyles.loginForm}>
-        <div className={loginBaseStyles.inputsWrapper}>
+      <Form className={loginBaseStyles.loginForm}>
+        <div className={formStyles.inputsWrapper}>
           <Input label="nome" placeholder="seu nome" type="text" required />
           <Input
             label="telefone"
@@ -43,7 +45,7 @@ export function Register() {
             logar
           </Link>
         </p>
-      </form>
+      </Form>
     </LoginBase>
   );
 }

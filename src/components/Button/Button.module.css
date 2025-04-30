@@ -7,7 +7,7 @@
   cursor: pointer;
   font-size: var(--size-text-md);
   width: max-content;
-  max-width: 400px;
+  max-width: 100%;
   border-radius: 38px;
   transition: background-color 0.2s ease, color 0.2s ease;
   text-align: center;

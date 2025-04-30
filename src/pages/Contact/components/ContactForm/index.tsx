@@ -1,6 +1,10 @@
 import { FormEventHandler, useState } from "react";
-import styles from "~components/Contact/ContactForm.module.css";
+import styles from "~pages/Contact/components/ContactForm/ContactForm.module.css";
 import GUY_IMAGE from "~assets/img/guy.png";
+import { Form } from "~components/Form";
+import formStyles from "~components/Form/Form.module.css";
+import { Input } from "~components/Input";
+import { Button } from "~components/Button";
 
 const ContactForm = () => {
   const [name, setName] = useState("");
@@ -33,67 +37,54 @@ const ContactForm = () => {
       <div className={styles.formSection}>
         <h1>mande sua mensagem</h1>
         <p>iremos amar ouvir você!</p>
-        <form className={styles.contactForm} onSubmit={handleSubmit}>
+        <Form onSubmit={handleSubmit}>
           {error && <p className={styles.error}>{error}</p>}
-          <div>
-            <label htmlFor="name">nome *</label>
-            <input
-              type="text"
+          <div className={formStyles.inputsWrapper}>
+            <Input
               id="name"
-              className={styles.inputField}
-              value={name}
-              onChange={(e) => {
-                setName(e.target.value);
-              }}
+              type="text"
+              label="nome"
               placeholder="seu nome"
               required
-            />
-          </div>
-          <div>
-            <label htmlFor="email">e-mail *</label>
-            <input
-              type="email"
-              id="email"
-              className={styles.inputField}
-              value={email}
-              onChange={(e) => {
-                setEmail(e.target.value);
+              onInput={(e) => {
+                setName(e.target.value);
               }}
+            />
+            <Input
+              id="email"
+              type="email"
+              label="e-mail"
               placeholder="seu melhor e-mail"
               required
-            />
-          </div>
-          <div>
-            <label htmlFor="phone">telefone *</label>
-            <input
-              type="tel"
-              id="phone"
-              className={styles.inputField}
-              value={phone}
-              onChange={(e) => {
-                setPhone(e.target.value);
+              onInput={(e) => {
+                setEmail(e.target.value);
               }}
+            />
+            <Input
+              id="phone"
+              type="tel"
+              label="telefone"
               placeholder="(99) 99999-9999"
               required
-            />
-          </div>
-          <div>
-            <label htmlFor="message">mensagem *</label>
-            <textarea
-              id="message"
-              className={styles.textareaField}
-              value={message}
-              onChange={(e) => {
-                setMessage(e.target.value);
+              onInput={(e) => {
+                setPhone(e.target.value);
               }}
+            />
+            <Input
+              id="message"
+              type="text"
               placeholder="mande seu elogio, reclamação ou suporte"
               required
+              label="mensagem"
+              onInput={(e) => {
+                setMessage(e.target.value);
+              }}
             />
           </div>
-          <button type="submit" className={styles.submitButton}>
+          <Button htmlType="submit" className={styles.submitButton}>
             enviar mensagem
-          </button>
-        </form>
+          </Button>
+        </Form>
       </div>
     </div>
   );

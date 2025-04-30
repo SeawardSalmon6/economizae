@@ -15,6 +15,7 @@ export function BaseInput({ label, suffix, required, ...props }: InputProps) {
       <div className={styles.inputWrapper}>
         <input
           {...props}
+          name={props.id}
           className={clsx(props.className, styles.input, {
             [styles.hasSuffix]: suffix,
           })}

@@ -1,3 +1,4 @@
+import formStyles from "~components/Form/Form.module.css";
 import loginBaseStyles from "~pages/Login/components/LoginBase/LoginBase.module.css";
 import styles from "~pages/Login/Login.module.css";
 
@@ -5,12 +6,13 @@ import { Input } from "~components/Input";
 import { Button } from "~components/Button";
 import { Link } from "react-router";
 import { LoginBase } from "~pages/Login/components/LoginBase";
+import { Form } from "~components/Form";
 
 export function Login() {
   return (
     <LoginBase centeredForm>
-      <form className={loginBaseStyles.loginForm}>
-        <div className={loginBaseStyles.inputsWrapper}>
+      <Form className={loginBaseStyles.loginForm}>
+        <div className={formStyles.inputsWrapper}>
           <Input
             label="e-mail"
             placeholder="seu e-mail"
@@ -31,7 +33,7 @@ export function Login() {
             cadastre-se
           </Link>
         </p>
-      </form>
+      </Form>
     </LoginBase>
   );
 }

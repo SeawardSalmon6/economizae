@@ -1,0 +1,52 @@
+.inputRoot {
+  width: 100%;
+}
+
+.inputWrapper {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.suffix {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  padding: 0;
+  transform: translateY(-50%);
+  color: var(--light-grey);
+}
+
+.input {
+  display: block;
+  width: 100%;
+  font-size: var(--size-text-sm);
+  background-color: var(--pure-white);
+  border: 1px solid var(--primary-green);
+  border-radius: 60px;
+  color: var(--dark-green);
+  padding: 12px 26px;
+  vertical-align: middle;
+}
+
+.hasSuffix {
+  padding-right: 40px;
+}
+
+.input::placeholder {
+  color: var(--light-grey);
+  font-weight: 400;
+}
+
+.label {
+  display: block;
+  font-size: var(--size-text-sm);
+  color: var(--dark-green);
+  margin-bottom: 8px;
+}
+
+.label[aria-required="true"]::after {
+  content: " *";
+  color: inherit;
+}

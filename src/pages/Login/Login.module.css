@@ -1,0 +1,7 @@
+.submitButton {
+  margin: 24px 0;
+}
+
+.register {
+  font-size: var(--size-text-sm);
+}

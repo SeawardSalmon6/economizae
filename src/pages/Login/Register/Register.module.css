@@ -1,0 +1,23 @@
+.registerHeader {
+  max-width: 320px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.title {
+  font-size: var(--size-subtitle);
+  color: var(--dark-green);
+}
+
+.registerText {
+  font-size: var(--size-text-md);
+  color: var(--dark-green);
+}
+
+.submitButton {
+  margin: 24px 0;
+}
+
+.login {
+  font-size: var(--size-text-sm);
+}

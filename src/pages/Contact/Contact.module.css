@@ -1,0 +1,63 @@
+.contactPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  font-family: 'Arial', sans-serif;
+}
+
+.contactForm {
+  width: 100%;
+  max-width: 600px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  transition: box-shadow 0.3s ease;
+}
+
+.contactForm:hover {
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px;
+  text-align: center;
+}
+
+.error {
+  color: red;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.inputField {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.inputField:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.submitButton {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+  background-color: #0056b3;
+}

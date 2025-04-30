@@ -1,0 +1,133 @@
+
+  .introSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0 80px;
+    text-align: center;
+  }
+  
+  .introSection h1 {
+    font-size: var(--size-title);
+    color: var(--dark-green);
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    line-height: 1.25;
+  }
+  
+  .introSection p {
+    font-size: var(--size-text-md);
+    color: var(--light-grey);
+    margin-top: 15px;
+    line-height: 1.5;
+    max-width: 500px;
+  }
+  
+  .featureSection {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 0;
+    background-color: var(--primary-green);
+  }
+  
+  .featureArticle {
+    color: var(--pure-white);
+    letter-spacing: 0.025em;
+    line-height: 1.5;
+    width: 426px;
+  }
+  
+  .featureArticle h2 {
+    color: var(--pure-white);
+    font-size: var(--size-subtitle);
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    line-height: 1.25;
+    margin-bottom: 24px;
+    text-align: left;
+  }
+
+  .featureArticle p {
+    font-size: var(--size-text-md);
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 24px;
+  }
+  
+  .featureImageContainer {
+    position: relative;
+    max-width: 600px;
+    width: 100%;
+  }
+  
+  .featureBackgroundCircle {
+    position: absolute;
+    top: 50%;
+    right: -60px;
+    transform: translateY(-50%);
+    border-radius: 9999px;
+    background-color: #f5f5f5;
+    height: 500px;
+    width: 500px;
+    z-index: 0;
+  }
+  
+  .featureImage {
+    position: relative;
+    object-fit: contain;
+    width: 100%;
+    aspect-ratio: 1.8;
+    z-index: 1;
+  }
+  
+  /* Seção de chamada para ação */
+  .ctaSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0;
+    width: 100%;
+  }
+  
+  .ctaContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 836px;
+    width: 100%;
+  }
+  
+  .ctaContainer h2 {
+    font-size: var(--size-subtitle);
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-align: center;
+    color: var(--dark-green);
+  }
+  
+  .ctaButton {
+    display: flex;
+    align-items: center;
+    padding: 16px 32px;
+    margin-top: 24px;
+    font-size: var(--size-text-md);
+    font-weight: 600;
+    letter-spacing: 0.025em;
+    background-color: var(--primary-green);
+    color: var(--pure-white);
+    border-radius: 38px;
+    max-width: fit-content;
+    text-decoration: none;
+    transition: all 500ms;
+    cursor: pointer;
+  }
+
+  .ctaButton:hover {
+    background-color: var(--dark-green);
+  }
+  
+  

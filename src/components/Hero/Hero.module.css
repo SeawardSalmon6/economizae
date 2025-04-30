@@ -2,56 +2,42 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding-top: 60px;
-  font-family:
-    Funnel Display,
-    -apple-system,
-    Roboto,
-    Helvetica,
-    sans-serif;
+  margin: 60px 0 120px;
+  font-family: "Funnel Display", sans-serif;
 }
 
 .heroContent {
   display: flex;
   flex-direction: column;
   align-self: center;
-  width: 836px;
-  max-width: 100%;
+  gap: 48px;
+  max-width: 840px;
+  width: 100%;
 }
 
 .heroTitle {
-  color: #1a281b;
+  color: var(--dark-green);
   letter-spacing: 1.44px;
   text-align: center;
-  font-size: 48px;
+  font-size: var(--size-title);
   font-weight: 700;
   line-height: 62px;
-  margin: 0;
 }
 
 .searchBar {
-  color: #5f605f;
+  color: var(--light-grey);
   letter-spacing: 0.48px;
-  background-color: #fff;
-  border: 1px solid #05823e;
+  background-color: var(--pure-white);
+  border: 1px solid var(--primary-green);
   border-radius: 60px;
   display: flex;
   align-items: center;
   gap: 24px;
-  width: 802px;
-  max-width: 100%;
-  margin-top: 48px;
+  max-width: 800px;
+  width: 100%;
   padding: 13px 26px;
-  font-size: 16px;
+  font-size: var(--size-text-md);
   font-weight: 600;
-}
-
-.searchIcon {
-  aspect-ratio: 1;
-  object-fit: contain;
-  object-position: center;
-  width: 24px;
-  margin: auto 0;
 }
 
 .searchInput {
@@ -59,14 +45,11 @@
   outline: none;
   background: none;
   width: 100%;
-  color: inherit;
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
+  color: var(--light-grey);
 }
 
-.categories {
-  color: #0a490f;
+/* .categories {
+  color: var(--primary-green);
   letter-spacing: 0.48px;
   display: flex;
   flex-wrap: wrap;
@@ -77,26 +60,13 @@
   margin-top: 96px;
   font-size: 16px;
   font-weight: 600;
-}
-
+} 
+  
 @media (width <= 991px) {
-  .hero {
-    max-width: 100%;
-  }
-
-  .heroTitle {
-    font-size: 40px;
-    line-height: 58px;
-  }
-
-  .searchBar {
-    margin-top: 40px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
   .categories {
     margin-top: 40px;
     white-space: initial;
   }
-}
+}  
+*/
+

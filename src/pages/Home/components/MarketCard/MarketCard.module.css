@@ -2,15 +2,14 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  min-width: 240px;
+  max-width: 33%;
 }
 
 .marketImage {
-  aspect-ratio: 1;
   object-fit: contain;
   object-position: center;
-  width: 100px;
-  margin: auto 0;
+  width: 60px;
+  border-radius: 6px;
 }
 
 .marketInfo {
@@ -18,42 +17,38 @@
   flex-direction: column;
   align-self: stretch;
   min-width: 240px;
-  margin: auto 0;
 }
 
 .marketName {
-  color: #1a281b;
+  color: var(--dark-green);
   letter-spacing: 0.54px;
-  font-size: 18px;
+  font-size: var(--size-text-lg);
   font-weight: 600;
-  margin: 0;
 }
 
 .ratingContainer {
-  color: #444;
+  color: var(--light-grey);
   letter-spacing: 0.48px;
   display: flex;
   align-items: center;
   gap: 10px;
   margin-top: 10px;
-  font-size: 16px;
+  font-size: var(--size-text-md);
 }
 
 .ratingIcon {
-  aspect-ratio: 1.07;
   object-fit: contain;
   object-position: center;
   width: 15px;
-  margin: auto 0;
 }
 
 .rating {
-  color: rgb(232, 135, 18);
+  color: var(--orange);
 }
 
 .priceContainer {
   letter-spacing: 0.42px;
-  background-color: #6cf9ac;
+  background-color: var(--light-green);
   border-radius: 6px;
   display: flex;
   justify-content: center;
@@ -61,13 +56,12 @@
   gap: 10px;
   margin-top: 10px;
   padding: 3px 10px;
-  font-size: 14px;
+  font-size: var(--size-text-sm);
+  color: var(--dark-green);
 }
 
 .priceIcon {
-  aspect-ratio: 0.86;
   object-fit: contain;
   object-position: center;
   width: 12px;
-  margin: auto 0;
 }

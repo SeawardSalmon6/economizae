@@ -1,15 +1,10 @@
 .categoryButton {
-  background-color: #6cf9ac;
-  border: 1px solid #05833e;
+  background-color: var(--light-green);
+  border: 1px solid var(--primary-green);
   border-radius: 12px;
-  color: #0a490f;
+  color: var(--dark-green);
   padding: 16px;
-  font-family:
-    Funnel Display,
-    -apple-system,
-    Roboto,
-    Helvetica,
-    sans-serif;
+  font-family: "Funnel Display", sans-serif;
   font-size: 16px;
   font-weight: 600;
   letter-spacing: 0.48px;

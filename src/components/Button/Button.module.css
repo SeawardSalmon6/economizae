@@ -2,20 +2,48 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 8px;
   padding: 16px 32px;
   cursor: pointer;
   font-size: var(--size-text-md);
-  color: var(--pure-white);
-  width: 100%;
+  width: max-content;
   max-width: 400px;
   border-radius: 38px;
-  border: none;
-  background-color: var(--primary-green);
-  transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease, color 0.2s ease;
   text-align: center;
+  border: none;
+  line-height: 1.5;
 }
 
-.button:hover,
-.button:focus-visible {
+.button svg {
+  vertical-align: middle;
+}
+
+.button svg path[fill] {
+  fill: currentColor;
+}
+
+.button svg path[stroke] {
+  stroke: currentColor;
+}
+
+.primary {
+  background-color: var(--primary-green);
+  color: var(--pure-white);
+}
+
+.button.primary:hover,
+.button.primary:focus-visible {
   background-color: var(--dark-green);
+}
+
+.secondary {
+  color: var(--primary-green);
+  background-color: var(--pure-white);
+}
+
+.button.secondary:hover,
+.button.secondary:focus-visible {
+  color: var(--pure-white);
+  background-color: var(--primary-green);
 }

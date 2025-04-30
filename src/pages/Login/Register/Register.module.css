@@ -15,6 +15,7 @@
 }
 
 .submitButton {
+  width: 100% !important;
   margin: 24px 0;
 }
 

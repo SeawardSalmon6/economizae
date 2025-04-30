@@ -5,7 +5,7 @@
 }
 
 .loginImage {
-  max-height: 700px;
+  max-height: 100vh;
   width: 100%;
 }
 
@@ -15,10 +15,14 @@
   align-items: center;
   justify-content: flex-start;
   width: 100%;
-  padding: 32px 0;
-  max-height: 700px;
+  padding: 60px 0;
+  max-height: 100vh;
   height: 100%;
   overflow-y: auto;
+}
+
+.centeredFormWrapper {
+  justify-content: center;
 }
 
 .logo {
@@ -54,4 +58,10 @@
 .link:hover,
 .link:focus-visible {
   color: var(--dark-green);
+}
+
+.backButton {
+  position: absolute;
+  top: 60px;
+  left: 80px;
 }

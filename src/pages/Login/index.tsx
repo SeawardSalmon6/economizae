@@ -8,7 +8,7 @@ import { LoginBase } from "~pages/Login/components/LoginBase";
 
 export function Login() {
   return (
-    <LoginBase>
+    <LoginBase centeredForm>
       <form className={loginBaseStyles.loginForm}>
         <div className={loginBaseStyles.inputsWrapper}>
           <Input
@@ -22,7 +22,7 @@ export function Login() {
         <a href="#" className={loginBaseStyles.link}>
           esqueci minha senha
         </a>
-        <Button type="submit" className={styles.submitButton}>
+        <Button htmlType="submit" className={styles.submitButton}>
           entrar
         </Button>
         <p className={styles.register}>

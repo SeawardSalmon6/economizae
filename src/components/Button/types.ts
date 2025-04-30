@@ -1,5 +1,8 @@
 import { HTMLProps } from "react";
 
 export type ButtonProps = Omit<HTMLProps<HTMLButtonElement>, "type"> & {
-  type?: "button" | "submit" | "reset";
+  htmlType?: "button" | "submit" | "reset";
+  type?: "primary" | "secondary";
+  to?: string;
+  externalTo?: string;
 };

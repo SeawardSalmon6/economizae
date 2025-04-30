@@ -3,7 +3,7 @@ import { BaseInput } from "..";
 import { InputProps } from "~components/Input/types";
 import styles from "~components/Input/PasswordInput/PasswordInput.module.css";
 import EYE_OPEN_ICON from "~assets/img/opened-eye.svg";
-import EYE_CLOSED_ICON from "~assets/img/closed-eye.svg";
+import { ClosedEyeIcon } from "~icons/ClosedEyeIcon";
 
 export function PasswordInput({ ...props }: InputProps) {
   const [visible, setVisible] = useState(false);
@@ -21,7 +21,7 @@ export function PasswordInput({ ...props }: InputProps) {
           className={styles.setVisibleButton}
         >
           {visible ? (
-            <img src={EYE_CLOSED_ICON} alt="Ícone de olho fechado" />
+            <ClosedEyeIcon />
           ) : (
             <img src={EYE_OPEN_ICON} alt="Ícone de olho aberto" />
           )}

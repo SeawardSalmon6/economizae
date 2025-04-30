@@ -2,17 +2,13 @@ import styles from "./MarketCard.module.css";
 import { MarketCardProps } from "./types";
 
 export function MarketCard({
-  distance,
-  image,
-  name,
-  price,
-  rating,
+  market
 }: MarketCardProps) {
   return (
     <article className={styles.marketCard}>
-      <img src={image} alt={name} className={styles.marketImage} />
+      <img src={market.image} alt={market.name} className={styles.marketImage} />
       <div className={styles.marketInfo}>
-        <h3 className={styles.marketName}>{name}</h3>
+        <h3 className={styles.marketName}>{market.name}</h3>
         <div className={styles.ratingContainer}>
           <img
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/46c34139e63730a7502b35e25632bbe86604fde8?placeholderIfAbsent=true&apiKey=d83e7b782cab4cabaa5ad67426cc8d88"
@@ -20,7 +16,7 @@ export function MarketCard({
             className={styles.ratingIcon}
           />
           <p className={styles.ratingText}>
-            <span className={styles.rating}>{rating}</span> • {distance}
+            <span className={styles.rating}>{market.rating}</span> • {market.distance}
           </p>
         </div>
         <div className={styles.priceContainer}>
@@ -29,7 +25,7 @@ export function MarketCard({
             alt="Price"
             className={styles.priceIcon}
           />
-          <p className={styles.priceText}>{price}</p>
+          <p className={styles.priceText}>{market.price}</p>
         </div>
       </div>
     </article>

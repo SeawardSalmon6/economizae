@@ -1,7 +1,5 @@
+import { MarketModel } from "../../../../types/models/market/types";
+
 export interface MarketCardProps {
-  name: string;
-  image: string;
-  rating: string;
-  distance: string;
-  price: string;
+  market: MarketModel
 }

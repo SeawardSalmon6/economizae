@@ -1,5 +1,7 @@
+import { clsx } from "clsx";
 import { Header } from "../../components/Header";
 import { Hero } from "../../components/Hero";
+import { Footer } from "../../components/Footer"
 import { BasicBasketCard } from "./components/BasicBasketCard";
 import { MarketCard } from "./components/MarketCard";
 import { BASIC_BASKET_ITEMS, FEATURED_MARKETS } from "./constants";
@@ -11,16 +13,16 @@ export function Home() {
       <Header />
       <Hero />
 
-      <section className={styles.featuredMarkets}>
+      <section className={clsx(styles.featuredMarkets, 'wrapper-container')}>
         <h2 className={styles.sectionTitle}>mercados em destaque</h2>
         <div className={styles.marketsGrid}>
           {FEATURED_MARKETS.map((market) => (
-            <MarketCard key={market.id} {...market} />
+            <MarketCard key={market.id} market={market} />
           ))}
         </div>
       </section>
 
-      <section className={styles.shoppingList}>
+      {/* <section className={styles.shoppingList}>
         <h2 className={styles.sectionTitle}>lista de compras</h2>
         <div className={styles.createList}>
           <div className={styles.createListButton}>
@@ -34,24 +36,21 @@ export function Home() {
             <span className={styles.createText}>Criar lista</span>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <section className={styles.basicBasket}>
+      <section className={clsx(styles.basicBasket, 'wrapper-container')}>
         <h2 className={styles.sectionTitle}>itens de cesta básica</h2>
         <div className={styles.basketGrid}>
-          {BASIC_BASKET_ITEMS.map((item) => (
+          {BASIC_BASKET_ITEMS.map((market) => (
             <BasicBasketCard
-              key={item.id}
-              distance={item.distance}
-              image={item.image}
-              marketLogo={item.image}
-              marketName={item.name}
-              price={item.price}
-              rating={item.rating}
+              key={market.id}
+              market={market}
             />
           ))}
         </div>
       </section>
+
+      <Footer />
     </main>
   );
 }

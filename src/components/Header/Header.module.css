@@ -3,26 +3,17 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  gap: 40px 100px;
-  width: 100%;
   padding: 20px 0;
 }
 
 .navigation {
-  color: #1a281b;
+  color: var(--dark-green);
   letter-spacing: 0.48px;
   display: flex;
   align-items: center;
-  gap: 40px 56px;
-  min-width: 240px;
-  margin: auto 0;
-  font-family:
-    Funnel Display,
-    -apple-system,
-    Roboto,
-    Helvetica,
-    sans-serif;
-  font-size: 16px;
+  gap: 56px;
+  font-family: "Funnel Display", sans-serif;
+  font-size: var(--size-text-md);
   font-weight: 600;
 }
 
@@ -32,7 +23,6 @@
   object-position: center;
   width: 91px;
   min-height: 40px;
-  margin: auto 0;
 }
 
 .navLinks {
@@ -40,11 +30,6 @@
   align-items: center;
   gap: 24px;
   margin: auto 0;
-}
-
-.navLink {
-  color: inherit;
-  text-decoration: none;
 }
 
 .userSection {
@@ -56,56 +41,30 @@
   margin: auto 0;
 }
 
-.address {
-  color: #444;
+.link {
+  color: var(--dark-green);
   letter-spacing: 0.48px;
-  margin: auto 0;
-  font-family:
-    Funnel Display,
-    -apple-system,
-    Roboto,
-    Helvetica,
-    sans-serif;
-  font-size: 16px;
+  font-family: "Funnel Display", sans-serif;
+  font-size: var(--size-text-md);
   font-weight: 600;
+  transition: all 500ms;
+  text-decoration: none;
 }
 
-.locationIcon {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  width: 14px;
-  margin: auto 0;
+.link:hover {
+  color: var(--primary-green);
 }
 
 .loginButton {
-  color: #05833e;
+  color: var(--primary-green);
   letter-spacing: 0.36px;
   display: flex;
   align-items: center;
   gap: 8px;
-  margin: auto 0;
-  font-family:
-    Funnel Display,
-    -apple-system,
-    Roboto,
-    Helvetica,
-    sans-serif;
-  font-size: 12px;
+  font-family: "Funnel Display", sans-serif;
+  font-size: var(--size-text-md);
   font-weight: 600;
   line-height: 1.3;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-}
-
-.loginIcon {
-  aspect-ratio: 0.87;
-  object-fit: contain;
-  object-position: center;
-  width: 14px;
-  margin: auto 0;
 }
 
 @media (width <= 991px) {

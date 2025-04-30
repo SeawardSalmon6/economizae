@@ -1,0 +1,37 @@
+.footer {
+    background: var(--dark-green);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    padding: 80px 0;
+}
+
+.logo {
+    max-width: 180px;
+}
+
+.linksSection {
+    display: flex;
+    align-items: center;
+    gap: 200px;
+}
+
+.linksList {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.link {
+    color: var(--pure-white);
+    text-decoration: none;
+    font-size: var(--size-text-md);
+}
+
+.text {
+    color: var(--pure-white);
+    font-size: var(--size-text-sm);
+    text-align: center;
+}
+

@@ -1,5 +1,5 @@
-import { Layout } from "../../components/Layout";
-import styles from "./About.module.css";
+import { Layout } from "~components/Layout";
+import styles from "~pages/About/About.module.css";
 
 export function About() {
   return (
@@ -12,13 +12,11 @@ export function About() {
             melhores preços nos mercados da região.
           </p>
           <p>
-            a ideia nasceu quando os fundadores perceberam que, assim como
-            eles, muita gente tava precisando economizar no dia a dia. Então
-            por que não facilitar isso pra todo mundo?
+            a ideia nasceu quando os fundadores perceberam que, assim como eles,
+            muita gente tava precisando economizar no dia a dia. Então por que
+            não facilitar isso pra todo mundo?
           </p>
-          <p>
-            bora economizar juntos? Vem com a gente!
-          </p>
+          <p>bora economizar juntos? Vem com a gente!</p>
         </div>
       </section>
 
@@ -26,17 +24,17 @@ export function About() {
         <article className={styles.featureArticle}>
           <h2>simples de usar</h2>
           <p>
-            por meio do nosso site, somos seu comparador de preços dos
-            mercados da região. nosso objetivo é simples: te ajudar a decidir
-            onde vale mais a pena fazer suas compras.
+            por meio do nosso site, somos seu comparador de preços dos mercados
+            da região. nosso objetivo é simples: te ajudar a decidir onde vale
+            mais a pena fazer suas compras.
           </p>
           <p>
             aqui, você compara os preços rapidinho e acompanha os melhores
             valores com base na sua lista.
           </p>
           <p>
-            tudo pra facilitar sua vida e te ajudar a economizar de verdade,
-            sem complicação!
+            tudo pra facilitar sua vida e te ajudar a economizar de verdade, sem
+            complicação!
           </p>
         </article>
         <div className={styles.featureImageContainer}>
@@ -52,9 +50,7 @@ export function About() {
       <section className={styles.ctaSection}>
         <div className={styles.ctaContainer}>
           <h2>vamos começar?</h2>
-          <a className={styles.ctaButton}>
-            ver os melhores mercados
-          </a>
+          <a className={styles.ctaButton}>ver os melhores mercados</a>
         </div>
       </section>
     </Layout>

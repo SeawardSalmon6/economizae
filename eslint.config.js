@@ -4,6 +4,7 @@ import tseslint from "typescript-eslint";
 import pluginReact from "eslint-plugin-react";
 import reactX from "eslint-plugin-react-x";
 import reactDom from "eslint-plugin-react-dom";
+// import noRelativeImportPaths from "eslint-plugin-no-relative-import-paths";
 
 export default tseslint.config(
   {
@@ -34,6 +35,9 @@ export default tseslint.config(
         tsconfigRootDir: import.meta.dirname,
       },
     },
+    rules: {
+      "@typescript-eslint/consistent-type-definitions": ["error", "type"],
+    },
   },
   pluginReact.configs.flat.recommended,
   pluginReact.configs.flat["jsx-runtime"],
@@ -57,10 +61,34 @@ export default tseslint.config(
       ...reactX.configs["recommended-typescript"].rules,
       ...reactDom.configs.recommended.rules,
     },
-  },
-  {
-    rules: {
-      "@typescript-eslint/consistent-type-definitions": ["error", "type"],
-    },
+
+    // "import/resolver": {
+    //   alias: {
+    //     map: [
+    //       ["~", "./src/"],
+    //       ["~apis", "./src/apis/"],
+    //       ["~components", "./src/components/"],
+    //       ["~contexts", "./src/contexts/"],
+    //       ["~hooks", "./src/hooks/"],
+    //       ["~icons", "./src/icons/"],
+    //       ["~pages", "./src/pages/"],
+    //       ["~services", "./src/services/"],
+    //       ["~utils", "./src/utils/"],
+    //       ["~types", "./src/types/"],
+    //       ["~public", "./public/"],
+    //     ],
+
+    //     extensions: [".ts", ".tsx", ".js", ".jsx", ".json", ".scss", ".css"],
+    //   },
+    // },
   }
+  // {
+  //   name: "no-relative-import-paths",
+  //   plugins: {
+  //     "no-relative-import-paths": noRelativeImportPaths,
+  //   },
+  //   rules: {
+  //     "no-relative-import-paths/no-relative-import-paths": "error",
+  //   },
+  // },
 );

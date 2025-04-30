@@ -1,5 +1,5 @@
-import { ButtonProps } from "./types";
-import styles from "./Button.module.css";
+import { ButtonProps } from "~components/Button/types";
+import styles from "~components/Button/Button.module.css";
 import clsx from "clsx";
 
 export function Button({

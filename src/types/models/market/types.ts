@@ -1,4 +1,4 @@
-export interface MarketModel {
+export type MarketModel = {
     id: string;
     name: string;
     image: string;

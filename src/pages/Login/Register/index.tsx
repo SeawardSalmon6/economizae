@@ -1,9 +1,9 @@
 import { Link } from "react-router";
-import { Button } from "../../../components/Button";
-import { Input } from "../../../components/Input";
-import { LoginBase } from "../components/LoginBase";
-import loginBaseStyles from "../components/LoginBase/LoginBase.module.css";
-import styles from "./Register.module.css";
+import { Button } from "~components/Button";
+import { Input } from "~components/Input";
+import { LoginBase } from "~pages/Login/components/LoginBase";
+import loginBaseStyles from "~pages/Login/components/LoginBase/LoginBase.module.css";
+import styles from "~pages/Login/Register/Register.module.css";
 
 export function Register() {
   return (

@@ -1,10 +1,10 @@
 import { clsx } from "clsx";
-import { Hero } from "../../components/Hero";
-import { BasicBasketCard } from "./components/BasicBasketCard";
-import { MarketCard } from "./components/MarketCard";
-import { BASIC_BASKET_ITEMS, FEATURED_MARKETS } from "./constants";
-import styles from "./Home.module.css";
-import { Layout } from "../../components/Layout";
+import { Hero } from "~components/Hero";
+import { BasicBasketCard } from "~pages/Home/components/BasicBasketCard";
+import { MarketCard } from "~pages/Home/components/MarketCard";
+import { BASIC_BASKET_ITEMS, FEATURED_MARKETS } from "~pages/Home/constants";
+import styles from "~pages/Home/Home.module.css";
+import { Layout } from "~components/Layout";
 
 export function Home() {
   return (

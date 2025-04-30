@@ -1,12 +1,14 @@
-import styles from "./MarketCard.module.css";
-import { MarketCardProps } from "./types";
+import styles from "~pages/Home/components/MarketCard/MarketCard.module.css";
+import { MarketCardProps } from "~pages/Home/components/MarketCard/types";
 
-export function MarketCard({
-  market
-}: MarketCardProps) {
+export function MarketCard({ market }: MarketCardProps) {
   return (
     <article className={styles.marketCard}>
-      <img src={market.image} alt={market.name} className={styles.marketImage} />
+      <img
+        src={market.image}
+        alt={market.name}
+        className={styles.marketImage}
+      />
       <div className={styles.marketInfo}>
         <h3 className={styles.marketName}>{market.name}</h3>
         <div className={styles.ratingContainer}>
@@ -16,7 +18,8 @@ export function MarketCard({
             className={styles.ratingIcon}
           />
           <p className={styles.ratingText}>
-            <span className={styles.rating}>{market.rating}</span> • {market.distance}
+            <span className={styles.rating}>{market.rating}</span> •{" "}
+            {market.distance}
           </p>
         </div>
         <div className={styles.priceContainer}>

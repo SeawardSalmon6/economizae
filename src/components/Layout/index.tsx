@@ -1,6 +1,6 @@
-import { Footer } from "../Footer";
-import { Header } from "../Header";
-import { LayoutProps } from "./types";
+import { Footer } from "~components/Footer";
+import { Header } from "~components/Header";
+import { LayoutProps } from "~components/Layout/types";
 
 export function Layout({
   headerProps,

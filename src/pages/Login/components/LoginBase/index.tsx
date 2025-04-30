@@ -1,7 +1,7 @@
-import { Layout } from "../../../../components/Layout";
-import styles from "./LoginBase.module.css";
-import LOGO_IMAGE from "../../../../assets/img/logo.svg";
-import LOGIN_IMAGE from "../../../../assets/img/login.jpg";
+import { Layout } from "~components/Layout";
+import styles from "~pages/Login/components/LoginBase/LoginBase.module.css";
+import LOGO_IMAGE from "~assets/img/logo.svg";
+import LOGIN_IMAGE from "~assets/img/login.jpg";
 import { PropsWithChildren } from "react";
 
 export function LoginBase({ children }: PropsWithChildren) {

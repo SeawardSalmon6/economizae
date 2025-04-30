@@ -1,8 +1,8 @@
-import styles from "./Footer.module.css";
-import WHITE_LOGO from "../../assets/img/logo-white.svg";
+import styles from "~components/Footer/Footer.module.css";
+import WHITE_LOGO from "~assets/img/logo-white.svg";
 import { Link } from "react-router";
 import clsx from "clsx";
-import { FooterProps } from "./types";
+import { FooterProps } from "~components/Footer/types";
 
 export function Footer({ ...props }: FooterProps) {
   return (

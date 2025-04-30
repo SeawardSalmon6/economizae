@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { BaseInput } from "..";
-import { InputProps } from "../types";
-import styles from "./PasswordInput.module.css";
-import EYE_OPEN_ICON from "../../../assets/img/opened-eye.svg";
-import EYE_CLOSED_ICON from "../../../assets/img/closed-eye.svg";
+import { InputProps } from "~components/Input/types";
+import styles from "~components/Input/PasswordInput/PasswordInput.module.css";
+import EYE_OPEN_ICON from "~assets/img/opened-eye.svg";
+import EYE_CLOSED_ICON from "~assets/img/closed-eye.svg";
 
 export function PasswordInput({ ...props }: InputProps) {
   const [visible, setVisible] = useState(false);

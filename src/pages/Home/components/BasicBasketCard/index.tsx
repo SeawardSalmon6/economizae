@@ -1,18 +1,12 @@
-import cestaBasicaImg from '../../../../assets/img/cesta-basica.png';
-import styles from "./BasicBasketCard.module.css";
-import { BasicBasketCardProps } from "./types";
+import cestaBasicaImg from "~assets/img/cesta-basica.png";
+import styles from "~pages/Home/components/BasicBasketCard/BasicBasketCard.module.css";
+import { BasicBasketCardProps } from "~pages/Home/components/BasicBasketCard/types";
 
-export function BasicBasketCard({
-  market,
-}: BasicBasketCardProps) {
+export function BasicBasketCard({ market }: BasicBasketCardProps) {
   return (
     <article className={styles.basketCard}>
       <div className={styles.imageContainer}>
-        <img
-          src={cestaBasicaImg}
-          alt=""
-          className={styles.basketImage}
-        />
+        <img src={cestaBasicaImg} alt="" className={styles.basketImage} />
       </div>
       <div className={styles.cardContent}>
         <div className={styles.marketHeader}>
@@ -30,7 +24,8 @@ export function BasicBasketCard({
             className={styles.ratingIcon}
           />
           <p className={styles.ratingText}>
-            <span className={styles.rating}>{market.rating}</span> • {market.distance}
+            <span className={styles.rating}>{market.rating}</span> •{" "}
+            {market.distance}
           </p>
         </div>
         <div className={styles.priceContainer}>

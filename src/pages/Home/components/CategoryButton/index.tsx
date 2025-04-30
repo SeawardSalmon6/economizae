@@ -1,5 +1,5 @@
-import styles from "./CategoryButton.module.css";
-import { CategoryButtonProps } from "./types";
+import styles from "~pages/Home/components/CategoryButton/CategoryButton.module.css";
+import { CategoryButtonProps } from "~pages/Home/components/CategoryButton/types";
 
 export function CategoryButton({ label }: CategoryButtonProps) {
   return (

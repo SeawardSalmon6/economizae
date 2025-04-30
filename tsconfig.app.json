@@ -1,6 +1,46 @@
 {
   "compilerOptions": {
-    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "baseUrl": ".",
+    "paths": {
+      // Public
+      "~public": ["./public/index"],
+      "~public/*": ["./public/*"],
+      // Assets
+      "~assets": ["./assets/index"],
+      "~assets/*": ["./assets/*"],
+      // Components
+      "~components": ["./src/components/index"],
+      "~components/*": ["./src/components/*"],
+      // Icons
+      "~icons": ["./src/icons/index"],
+      "~icons/*": ["./src/icons/*"],
+      // Services
+      "~services": ["./src/services/index"],
+      "~services/*": ["./src/services/*"],
+      // Utils
+      "~utils": ["./src/utils/index"],
+      "~utils/*": ["./src/utils/*"],
+      // Apis
+      "~apis": ["./src/apis/index"],
+      "~apis/*": ["./src/apis/*"],
+      // Contexts
+      "~contexts": ["./src/contexts/index"],
+      "~contexts/*": ["./src/contexts/*"],
+      // Hooks
+      "~hooks": ["./src/hooks/index"],
+      "~hooks/*": ["./src/hooks/*"],
+      // Pages
+      "~pages": ["./src/pages/index"],
+      "~pages/*": ["./src/pages/*"],
+      // Types
+      "~types": ["./src/types/index"],
+      "~types/*": ["./src/types/*"],
+      // Root
+      "~/*": ["./src/*"]
+    },
+    "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true,
+
     "target": "ES2020",
     "useDefineForClassFields": true,
     "lib": ["ES2020", "DOM", "DOM.Iterable"],

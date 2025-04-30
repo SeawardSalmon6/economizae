@@ -1,3 +1,3 @@
-export interface CategoryButtonProps {
+export type CategoryButtonProps = {
   label: string;
 }

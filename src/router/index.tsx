@@ -3,11 +3,11 @@ import {
   createRoutesFromElements,
   Route,
 } from "react-router";
-import { Home } from "../pages/Home";
-import { Login } from "../pages/Login";
-import { About } from "../pages/About";
-import { Contact } from "../pages/Contact";
-import { Register } from "../pages/Login/Register";
+import { Home } from "~pages/Home";
+import { Login } from "~pages/Login";
+import { About } from "~pages/About";
+import { Contact } from "~pages/Contact";
+import { Register } from "~pages/Login/Register";
 
 export const routes = createRoutesFromElements(
   <Route path="/">

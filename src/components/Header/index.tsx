@@ -1,8 +1,8 @@
 import { clsx } from "clsx";
-import styles from "./Header.module.css";
-import { HeaderProps } from "./types";
+import styles from "~components/Header/Header.module.css";
+import { HeaderProps } from "~components/Header/types";
 import { Link } from "react-router";
-import LOGO from "../../assets/img/logo.svg";
+import LOGO from "~assets/img/logo.svg";
 
 export function Header({ ...props }: HeaderProps) {
   return (

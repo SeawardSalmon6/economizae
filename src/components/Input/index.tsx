@@ -1,8 +1,8 @@
 import { clsx } from "clsx";
 
-import styles from "./Input.module.css";
-import { InputProps } from "./types";
-import { PasswordInput } from "./PasswordInput";
+import styles from "~components/Input/Input.module.css";
+import { InputProps } from "~components/Input/types";
+import { PasswordInput } from "~components/Input/PasswordInput";
 
 export function BaseInput({ label, suffix, required, ...props }: InputProps) {
   return (

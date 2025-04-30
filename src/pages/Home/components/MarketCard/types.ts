@@ -1,5 +1,5 @@
-import { MarketModel } from "../../../../types/models/market/types";
+import { MarketModel } from "~types/models/market/types";
 
-export interface MarketCardProps {
-  market: MarketModel
-}
+export type MarketCardProps = {
+  market: MarketModel;
+};

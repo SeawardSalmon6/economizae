@@ -1,6 +1,8 @@
-import { Home } from "./pages/Home";
+import { RouterProvider } from "react-router";
+import { router } from "./router";
+
 import "./App.css";
 
 export function App() {
-  return <Home />;
+  return <RouterProvider router={router} />;
 }

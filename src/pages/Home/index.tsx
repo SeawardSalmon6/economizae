@@ -1,19 +1,17 @@
 import { clsx } from "clsx";
-import { Header } from "../../components/Header";
 import { Hero } from "../../components/Hero";
-import { Footer } from "../../components/Footer"
 import { BasicBasketCard } from "./components/BasicBasketCard";
 import { MarketCard } from "./components/MarketCard";
 import { BASIC_BASKET_ITEMS, FEATURED_MARKETS } from "./constants";
 import styles from "./Home.module.css";
+import { Layout } from "../../components/Layout";
 
 export function Home() {
   return (
-    <main className={styles.economizae}>
-      <Header />
+    <Layout className={styles.economizae}>
       <Hero />
 
-      <section className={clsx(styles.featuredMarkets, 'wrapper-container')}>
+      <section className={clsx(styles.featuredMarkets, "wrapperContainer")}>
         <h2 className={styles.sectionTitle}>mercados em destaque</h2>
         <div className={styles.marketsGrid}>
           {FEATURED_MARKETS.map((market) => (
@@ -38,19 +36,14 @@ export function Home() {
         </div>
       </section> */}
 
-      <section className={clsx(styles.basicBasket, 'wrapper-container')}>
+      <section className={clsx(styles.basicBasket, "wrapperContainer")}>
         <h2 className={styles.sectionTitle}>itens de cesta básica</h2>
         <div className={styles.basketGrid}>
           {BASIC_BASKET_ITEMS.map((market) => (
-            <BasicBasketCard
-              key={market.id}
-              market={market}
-            />
+            <BasicBasketCard key={market.id} market={market} />
           ))}
         </div>
       </section>
-
-      <Footer />
-    </main>
+    </Layout>
   );
 }

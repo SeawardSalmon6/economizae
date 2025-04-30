@@ -1,0 +1,61 @@
+.loginWrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+}
+
+.loginImage {
+  max-height: 700px;
+  width: 100%;
+}
+
+.loginFormWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.logo {
+  width: 100%;
+  max-width: 200px;
+  margin-bottom: 24px;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.inputsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.link {
+  color: var(--primary-green);
+  font-size: var(--size-text-sm);
+  text-decoration: underline;
+  transition: color 0.2s ease-in-out;
+}
+
+.link:hover,
+.link:focus-visible {
+  color: var(--dark-green);
+}
+
+.submitButton {
+  margin: 24px 0;
+}
+
+.register {
+  font-size: var(--size-text-sm);
+}

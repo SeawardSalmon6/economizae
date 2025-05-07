@@ -1,4 +1,4 @@
-import { FormEventHandler, useState } from "react";
+import { FormEventHandler } from "react";
 import styles from "~pages/Contact/components/ContactForm/ContactForm.module.css";
 import GUY_IMAGE from "~assets/img/guy.png";
 import { Form } from "~components/Form";
@@ -7,26 +7,19 @@ import { Input } from "~components/Input";
 import { Button } from "~components/Button";
 
 const ContactForm = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
-  const [message, setMessage] = useState("");
-  const [error, setError] = useState("");
-
   const handleSubmit: FormEventHandler<HTMLFormElement> = (e) => {
     e.preventDefault();
 
-    if (!name || !email || !phone || !message) {
-      setError("Todos os campos são obrigatórios.");
-      return;
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+    const data: Record<string, FormDataEntryValue> = {};
+
+    for (const [key, value] of formData.entries()) {
+      data[key] = value;
     }
 
-    setError("");
-    console.log("Formulário enviado:", { name, email, phone, message });
-    setName("");
-    setEmail("");
-    setPhone("");
-    setMessage("");
+    console.log(JSON.stringify(data, null, 4));
+    form.reset();
   };
 
   return (
@@ -38,7 +31,6 @@ const ContactForm = () => {
         <h1>mande sua mensagem</h1>
         <p>iremos amar ouvir você!</p>
         <Form onSubmit={handleSubmit}>
-          {error && <p className={styles.error}>{error}</p>}
           <div className={formStyles.inputsWrapper}>
             <Input
               id="name"
@@ -46,9 +38,6 @@ const ContactForm = () => {
               label="nome"
               placeholder="seu nome"
               required
-              onInput={(e) => {
-                setName(e.target.value);
-              }}
             />
             <Input
               id="email"
@@ -56,9 +45,6 @@ const ContactForm = () => {
               label="e-mail"
               placeholder="seu melhor e-mail"
               required
-              onInput={(e) => {
-                setEmail(e.target.value);
-              }}
             />
             <Input
               id="phone"
@@ -66,9 +52,6 @@ const ContactForm = () => {
               label="telefone"
               placeholder="(99) 99999-9999"
               required
-              onInput={(e) => {
-                setPhone(e.target.value);
-              }}
             />
             <Input
               id="message"
@@ -76,9 +59,7 @@ const ContactForm = () => {
               placeholder="mande seu elogio, reclamação ou suporte"
               required
               label="mensagem"
-              onInput={(e) => {
-                setMessage(e.target.value);
-              }}
+              inputType="textarea"
             />
           </div>
           <Button htmlType="submit" className={styles.submitButton}>

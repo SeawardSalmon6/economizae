@@ -4,4 +4,5 @@ export type InputProps = Omit<HTMLProps<HTMLInputElement>, "label"> & {
   id: string;
   suffix?: ReactNode;
   label?: ReactNode;
+  inputType?: 'input' | 'textarea';
 };

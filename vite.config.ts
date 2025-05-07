@@ -18,7 +18,6 @@ export default defineConfig({
       "~services": resolve(__dirname, "./src/services/"),
       "~utils": resolve(__dirname, "./src/utils/"),
       "~types": resolve(__dirname, "./src/types/"),
-      "~public": resolve(__dirname, "./public/"),
     },
   },
 });

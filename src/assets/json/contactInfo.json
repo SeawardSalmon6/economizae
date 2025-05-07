@@ -1,0 +1,18 @@
+[
+    {
+        "name": "João da Silva",
+        "email": "joao@email.com",
+        "phone": "(11) 98765-4321",
+        "message": "Gostei muito do atendimento. Parabéns!",
+        "status": "pendente",
+        "submittedAt": "2025-05-07T14:32:00.000Z"
+    },
+    {
+        "name": "Caio Sobrinho da Silva",
+        "email": "caio@email.com",
+        "phone": "(11) 93123-3123",
+        "message": "Gostaria de agendar um atendimento. Obrigado!",
+        "status": "pendente",
+        "submittedAt": "2025-05-07T15:10:00.000Z"
+    }
+]

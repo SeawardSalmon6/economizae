@@ -39,7 +39,9 @@ export function MarketCard({ market, onMarketClick }: MarketCardProps) {
           />
           <p className={styles.priceText}>{market.price}</p>
         </div>
+        <a className={styles.marketLink}>Mais detalhes</a>
       </div>
+      
     </article>
   );
 }

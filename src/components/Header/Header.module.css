@@ -76,3 +76,27 @@
     max-width: 100%;
   }
 }
+
+.addProductButton {
+  background-color: white;
+  color: var(--primary-green);
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: 1px solid var(--primary-green);
+  font-size: var(--size-text-sm);
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.addProductButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  border-color: var(--primary-green);
+}
+
+.addProductButtonText {
+  color: var(--primary-green);
+  text-decoration: none;
+}

@@ -2,16 +2,25 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  max-width: 33%;
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  padding: 8px;
-  border-radius: 8px;
+  padding: 16px;
+  min-width: 300px;
+  padding-bottom: 36px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  background: transparent;
 }
 
 .marketCard:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  border-color: var(--primary-green);
+  padding-bottom: 16px;
+  .marketLink {
+    display: inline-block;
+  }
 }
 
 .marketImage {
@@ -89,4 +98,14 @@
   object-fit: contain;
   object-position: center;
   width: 12px;
+}
+
+.marketLink {
+  color: var(--primary-green);
+  font-size: var(--size-text-sm);
+  text-decoration: underline;
+  font-weight: 600;
+  height: 20px;
+  transition: color 0.2s ease;
+  display: none;
 }

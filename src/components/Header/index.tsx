@@ -3,6 +3,7 @@ import styles from "~components/Header/Header.module.css";
 import { HeaderProps } from "~components/Header/types";
 import { Link } from "react-router";
 import LOGO from "~assets/img/logo.svg";
+import { ScanBarcode } from 'lucide-react';
 
 export function Header({ ...props }: HeaderProps) {
   return (
@@ -65,7 +66,10 @@ export function Header({ ...props }: HeaderProps) {
           </svg>
           <p className={styles.link}>listas</p>
         </a>
-
+        <Link className={clsx(styles.loginButton, styles.addProductButton)} to="/cadastrar-produto">
+          <ScanBarcode strokeWidth={1.8} size={21} strokeLinejoin="round" strokeLinecap="round" />
+          <p className={clsx(styles.link, styles.addProductButtonText)}>Cadastrar produto</p>
+        </Link>
         <Link className={clsx(styles.loginButton, styles.link)} to="/login">
           <svg
             width="18"

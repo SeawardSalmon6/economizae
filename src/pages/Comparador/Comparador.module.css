@@ -303,19 +303,29 @@
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
   margin-top: 24px;
+  padding-top: 16px;
+  padding-bottom: 10px;
+  padding-right: 60px;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  width: 100%;
 }
 
 .carouselTrack {
   display: flex;
-  gap: 16px;
+  gap: 24px;
   scroll-snap-align: start;
   padding-bottom: 16px;
+  width: max-content;
 }
 
 .carouselItem {
   flex: 0 0 auto;
   scroll-snap-align: start;
-  width: 300px;
+  width: 400px;
+  min-width: 400px;
 }
 
 .carouselTrack::-webkit-scrollbar {
@@ -324,18 +334,6 @@
 
 .carouselWrapper {
   position: relative;
-}
-
-.carouselContainer {
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-  margin-top: 24px;
-  padding-right: 60px;
-  overflow-x: scroll;
-  scroll-behavior: smooth;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
 }
 
 .carouselContainer::-webkit-scrollbar {

@@ -9,6 +9,7 @@ import { About } from "~pages/About";
 import { Contact } from "~pages/Contact";
 import { Register } from "~pages/Login/Register";
 import { Comparador } from "~pages/Comparador";
+import { AddProduct } from "~pages/AddProduct";
 
 export const routes = createRoutesFromElements(
   <Route path="/">
@@ -18,6 +19,7 @@ export const routes = createRoutesFromElements(
     <Route path="contato" element={<Contact />} />
     <Route path="cadastre-se" element={<Register />} />
     <Route path="comparador" element={<Comparador />} />
+    <Route path="cadastrar-produto" element={<AddProduct />} />
   </Route>
 );
 

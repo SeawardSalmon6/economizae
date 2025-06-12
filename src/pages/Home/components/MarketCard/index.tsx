@@ -1,9 +1,18 @@
 import styles from "~pages/Home/components/MarketCard/MarketCard.module.css";
 import { MarketCardProps } from "~pages/Home/components/MarketCard/types";
 
-export function MarketCard({ market }: MarketCardProps) {
+
+export function MarketCard({ market, onMarketClick }: MarketCardProps) {
+  const handleMarketClick = () => {
+    if (onMarketClick) {
+      onMarketClick(market);
+    }
+  };
+
   return (
-    <article className={styles.marketCard}>
+    <article className={styles.marketCard}
+      onClick={handleMarketClick}
+    >
       <img
         src={market.image}
         alt={market.name}

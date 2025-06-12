@@ -1,0 +1,46 @@
+[
+  {
+    "id": "1",
+    "name": "Maçã Importada",
+    "price": "R$ 9,90 1kg",
+    "image": "🍎",
+    "tag": "Melhor preço",
+    "availability": "hoje"
+  },
+  {
+    "id": "2",
+    "name": "Maçã Importada",
+    "price": "R$ 9,90 1kg",
+    "image": "🍎",
+    "availability": "05 Abr 2025"
+  },
+  {
+    "id": "3",
+    "name": "Maçã Importada",
+    "price": "R$ 9,90 1kg",
+    "image": "🍎",
+    "availability": "05 Abr 2025"
+  },
+  {
+    "id": "4",
+    "name": "Maçã Importada",
+    "price": "R$ 9,90 1kg",
+    "image": "🍎",
+    "availability": "05 Abr 2025"
+  },
+  {
+    "id": "5",
+    "name": "Maçã Importada",
+    "price": "R$ 9,90 1kg",
+    "image": "🍎",
+    "availability": "05 Abr 2025"
+  },
+  {
+    "id": "6",
+    "name": "Maçã Importada",
+    "price": "R$ 9,90/kg",
+    "image": "🍎",
+    "tag": "Indisponível",
+    "availability": "1kg"
+  }
+]

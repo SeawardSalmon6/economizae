@@ -7,6 +7,8 @@ import styles from "~pages/Home/Home.module.css";
 import { Layout } from "~components/Layout";
 
 export function Home() {
+
+
   return (
     <Layout className={styles.economizae}>
       <Hero />
@@ -15,7 +17,7 @@ export function Home() {
         <h2 className={styles.sectionTitle}>mercados em destaque</h2>
         <div className={styles.marketsGrid}>
           {FEATURED_MARKETS.map((market) => (
-            <MarketCard key={market.id} market={market} />
+            <MarketCard key={market.id} market={market}  />
           ))}
         </div>
       </section>

@@ -1,10 +1,21 @@
 import cestaBasicaImg from "~assets/img/cesta-basica.png";
+import { useNavigate } from "react-router";
 import styles from "~pages/Home/components/BasicBasketCard/BasicBasketCard.module.css";
 import { BasicBasketCardProps } from "~pages/Home/components/BasicBasketCard/types";
 
 export function BasicBasketCard({ market }: BasicBasketCardProps) {
+  const navigate = useNavigate();
+
+ const handleBasketClick = () => {
+    console.log('Navigating to comparador for market:', market);
+    void navigate('/Comparador');
+  };
+
   return (
-    <article className={styles.basketCard}>
+    <article 
+      className={styles.basketCard}
+      onClick={handleBasketClick}
+    >
       <div className={styles.imageContainer}>
         <img src={cestaBasicaImg} alt="" className={styles.basketImage} />
       </div>

@@ -1,7 +1,13 @@
 import { MarketModel } from "~types/models/market/types";
+import { ProductModel } from "~types/models/product/types";
 import MARKETS_JSON from "~assets/json/markets.json";
+import PRODUCTS_JSON from "~assets/json/products.json";
+
 
 export const MARKETS: MarketModel[] = MARKETS_JSON;
+
+export const PRODUCTS: ProductModel[] = PRODUCTS_JSON;
+export const BASIC_BASKET_PRODUCTS = [...PRODUCTS_JSON]
 
 export const FEATURED_MARKETS = [...MARKETS];
 export const BASIC_BASKET_ITEMS = [

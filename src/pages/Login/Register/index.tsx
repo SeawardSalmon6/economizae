@@ -18,21 +18,35 @@ export function Register() {
       </div>
       <Form className={loginBaseStyles.loginForm}>
         <div className={formStyles.inputsWrapper}>
-          <Input label="nome" placeholder="seu nome" type="text" required />
           <Input
+            id="name"
+            label="nome"
+            placeholder="seu nome"
+            type="text"
+            required
+          />
+          <Input
+            id="phone"
             label="telefone"
             placeholder="seu telefone"
             type="tel"
             required
           />
           <Input
+            id="email"
             label="e-mail"
             placeholder="seu e-mail"
             type="email"
             required
           />
-          <Input.PasswordInput label="senha" placeholder="sua senha" required />
           <Input.PasswordInput
+            id="password"
+            label="senha"
+            placeholder="sua senha"
+            required
+          />
+          <Input.PasswordInput
+            id="confirm-password"
             label="repita a senha"
             placeholder="sua senha"
             required

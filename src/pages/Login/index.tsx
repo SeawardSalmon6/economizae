@@ -14,12 +14,18 @@ export function Login() {
       <Form className={loginBaseStyles.loginForm}>
         <div className={formStyles.inputsWrapper}>
           <Input
+            id="email"
             label="e-mail"
             placeholder="seu e-mail"
             type="email"
             required
           />
-          <Input.PasswordInput label="senha" placeholder="sua senha" required />
+          <Input.PasswordInput
+            id="password"
+            label="senha"
+            placeholder="sua senha"
+            required
+          />
         </div>
         <a href="#" className={loginBaseStyles.link}>
           esqueci minha senha
